@@ -13,5 +13,8 @@
     <Button android:layout_width="match_parent" android:layout_height="wrap_content"
             android:id="@+id/notificationBtn"
             android:text="通知区域显示"/>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/checkableMenuBtn"
+            android:text="复选框上下文菜单"/>
 </LinearLayout>
 

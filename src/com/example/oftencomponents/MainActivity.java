@@ -19,6 +19,8 @@ public class MainActivity extends Activity {
     private Button progressDialogButton;
     private Button toastButton;
     private Button notificationButton;
+    private Button checkableMenuButton;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +30,7 @@ public class MainActivity extends Activity {
         progressDialogButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,ProgressDialogActivity.class);
+                Intent intent = new Intent(MainActivity.this, ProgressDialogActivity.class);
                 startActivity(intent);
             }
         });
@@ -37,9 +39,9 @@ public class MainActivity extends Activity {
         toastButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast toast = Toast.makeText(MainActivity.this,"带图片的提示信息",
+                Toast toast = Toast.makeText(MainActivity.this, "带图片的提示信息",
                         Toast.LENGTH_LONG);
-                toast.setGravity(Gravity.CENTER,0,0);
+                toast.setGravity(Gravity.CENTER, 0, 0);
                 View toastView = toast.getView();
                 ImageView image = new ImageView(MainActivity.this);
                 image.setImageResource(R.drawable.ic_launcher);
@@ -56,6 +58,15 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, NotificationActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        checkableMenuButton = (Button) findViewById(R.id.checkableMenuBtn);
+        checkableMenuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CheckableActivity.class);
                 startActivity(intent);
             }
         });
