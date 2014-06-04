@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:text="进度对话框"
+            android:id="@+id/progressDialogBtn"/>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="自定义消息提示"
+            android:id="@+id/msgDialogBtn"/>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/notificationBtn"
+            android:text="通知区域显示"/>
+</LinearLayout>
+
