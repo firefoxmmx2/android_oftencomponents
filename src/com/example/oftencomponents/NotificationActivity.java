@@ -51,7 +51,12 @@ public class NotificationActivity extends Activity {
                         .setAutoCancel(true)
                         .setContentIntent(pi)
                         .setDefaults(Notification.DEFAULT_ALL)
-                        .setDeleteIntent(pi).build();
+                        .setDeleteIntent(pi)
+                        .addAction(android.R.drawable.stat_sys_phone_call,
+                                getString(android.R.string.status_bar_notification_info_overflow),pi)
+                        .addAction(android.R.drawable.ic_input_add,
+                                getString(android.R.string.cancel),
+                                pi).build();
 
                 NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
                 notificationManager.notify(NOTIFICATION_ID,notify);
