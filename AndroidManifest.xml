@@ -15,5 +15,7 @@
         <activity android:name=".ProgressDialogActivity" android:label="LinearLayout"/>
         <activity android:name=".NotificationActivity"/>
         <activity android:name=".CheckableActivity"/>
+        <activity android:name=".ConfigrationActivity"/>
+        <activity android:name=".HandlerActivity"/>
     </application>
 </manifest>

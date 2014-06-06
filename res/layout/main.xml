@@ -16,5 +16,11 @@
     <Button android:layout_width="match_parent" android:layout_height="wrap_content"
             android:id="@+id/checkableMenuBtn"
             android:text="复选框上下文菜单"/>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/configurationActivityBtn"
+            android:text="手机信息"/>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/handlerBtn"
+            android:text="消息传递"/>
 </LinearLayout>
 

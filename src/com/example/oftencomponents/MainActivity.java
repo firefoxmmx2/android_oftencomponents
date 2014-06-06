@@ -20,6 +20,8 @@ public class MainActivity extends Activity {
     private Button toastButton;
     private Button notificationButton;
     private Button checkableMenuButton;
+    private Button configurationButton;
+    private Button handlerButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -67,6 +69,24 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CheckableActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        configurationButton = (Button) findViewById(R.id.configurationActivityBtn);
+        configurationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ConfigrationActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        handlerButton=(Button)findViewById(R.id.handlerBtn);
+        handlerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,HandlerActivity.class);
                 startActivity(intent);
             }
         });
