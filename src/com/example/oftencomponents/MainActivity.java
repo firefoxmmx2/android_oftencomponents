@@ -23,6 +23,7 @@ public class MainActivity extends Activity {
     private Button configurationButton;
     private Button handlerButton;
     private Button activityResultButton;
+    private Button intentTranBundleButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -97,6 +98,15 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this,SelectableActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        intentTranBundleButton=(Button)findViewById(R.id.intentTBundleBtn);
+        intentTranBundleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,SysActionActivity.class);
                 startActivity(intent);
             }
         });
