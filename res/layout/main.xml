@@ -22,5 +22,8 @@
     <Button android:layout_width="match_parent" android:layout_height="wrap_content"
             android:id="@+id/handlerBtn"
             android:text="消息传递"/>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/activityResultBtn"
+            android:text="活动结果传递"/>
 </LinearLayout>
 

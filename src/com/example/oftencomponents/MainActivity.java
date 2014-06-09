@@ -22,6 +22,7 @@ public class MainActivity extends Activity {
     private Button checkableMenuButton;
     private Button configurationButton;
     private Button handlerButton;
+    private Button activityResultButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -87,6 +88,15 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this,HandlerActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        activityResultButton=(Button)findViewById(R.id.activityResultBtn);
+        activityResultButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,SelectableActivity.class);
                 startActivity(intent);
             }
         });
