@@ -24,7 +24,9 @@ public class MainActivity extends Activity {
     private Button handlerButton;
     private Button activityResultButton;
     private Button intentTranBundleButton;
-
+    private Button returnHomeButton;
+    private Button dataAttrStartButton;
+    private Button intentTabButton;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -107,6 +109,33 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,SysActionActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        returnHomeButton=(Button)findViewById(R.id.returnHomeStartBtn);
+        returnHomeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,ReturnHomeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        dataAttrStartButton=(Button)findViewById(R.id.dataAttrStartBtn);
+        dataAttrStartButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,DataAttrActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        intentTabButton=(Button)findViewById(R.id.intentTabBtn);
+        intentTabButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,IntentTabActivity.class);
                 startActivity(intent);
             }
         });

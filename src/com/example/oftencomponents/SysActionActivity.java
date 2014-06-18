@@ -32,11 +32,11 @@ public class SysActionActivity extends Activity {
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
         switch (requestCode) {
             case PICK_CONTACT:
                 if (resultCode == Activity.RESULT_OK) {
-                    Uri contactData = data.getData();
+                    Uri contactData = intent.getData();
                     Cursor cursor = managedQuery(contactData, null, null, null, null);
                     if (cursor.moveToFirst()) {
                         String contactId = cursor.getString(cursor.getColumnIndex(ContactsContract.Contacts._ID));

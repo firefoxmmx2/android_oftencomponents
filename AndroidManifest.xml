@@ -20,6 +20,9 @@
         <activity android:name=".SelectableActivity"/>
         <activity android:name=".SelectableSelectActivity"/>
         <activity android:name=".SysActionActivity"/>
+        <activity android:name=".ReturnHomeActivity"/>
+        <activity android:name=".DataAttrActivity"/>
+        <activity android:name=".IntentTabActivity"/>
     </application>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
 </manifest>

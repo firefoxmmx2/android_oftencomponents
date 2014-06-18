@@ -28,5 +28,14 @@
     <Button android:layout_width="match_parent" android:layout_height="wrap_content"
             android:id="@+id/intentTBundleBtn"
             android:text="Intent传递bundle"/>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/returnHomeStartBtn"
+            android:text="返回系统home"/>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/dataAttrStartBtn"
+            android:text="Intent DataAttr实例"/>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/intentTabBtn"
+            android:text="Intent加载Tab"/>
 </LinearLayout>
 
