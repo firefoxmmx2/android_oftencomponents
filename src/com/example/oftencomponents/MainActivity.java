@@ -27,6 +27,8 @@ public class MainActivity extends Activity {
     private Button returnHomeButton;
     private Button dataAttrStartButton;
     private Button intentTabButton;
+    private Button canvasButton;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -136,6 +138,15 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this,IntentTabActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        canvasButton=(Button)findViewById(R.id.canvasBtn);
+        canvasButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,CanvasPicActivity.class);
                 startActivity(intent);
             }
         });

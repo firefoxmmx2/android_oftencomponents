@@ -37,5 +37,8 @@
     <Button android:layout_width="match_parent" android:layout_height="wrap_content"
             android:id="@+id/intentTabBtn"
             android:text="Intent加载Tab"/>
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:id="@+id/canvasBtn"
+            android:text="绘图实例"/>
 </LinearLayout>
 
