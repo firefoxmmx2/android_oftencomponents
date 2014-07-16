@@ -10,8 +10,9 @@ import android.view.View;
  */
 public class CanvasPicView extends View {
 
-    public CanvasPicView(Context context, AttributeSet attrs) {
-        super(context, attrs);
+
+    public CanvasPicView(Context context) {
+        super(context);
     }
 
     @Override

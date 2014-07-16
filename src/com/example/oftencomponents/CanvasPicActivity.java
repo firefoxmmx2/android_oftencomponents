@@ -10,7 +10,6 @@ public class CanvasPicActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.canvaspic);
-
+        setContentView(new CanvasPicView(this));
     }
 }
