@@ -47,7 +47,7 @@ public class CanvasPicView extends View {
 //        画五边形
         Path path2=new Path();
         path2.moveTo(26,360);
-        path2.lineTo(43,360);
+        path2.lineTo(54,360);
         path2.lineTo(70,392);
         path2.lineTo(40,420);
         path2.lineTo(10,392);
@@ -81,7 +81,7 @@ public class CanvasPicView extends View {
 //        画五边形
         Path path4=new Path();
         path4.moveTo(106,360);
-        path4.lineTo(134,160);
+        path4.lineTo(134,360);
         path4.lineTo(150,392);
         path4.lineTo(120,420);
         path4.lineTo(90,392);

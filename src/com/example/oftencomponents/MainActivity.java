@@ -28,6 +28,7 @@ public class MainActivity extends Activity {
     private Button dataAttrStartButton;
     private Button intentTabButton;
     private Button canvasButton;
+    private Button handDrawButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -147,6 +148,15 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this,CanvasPicActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        handDrawButton=(Button) findViewById(R.id.mycanvasBtn);
+        handDrawButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,HandDrawCanvasActivity.class);
                 startActivity(intent);
             }
         });

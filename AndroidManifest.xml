@@ -25,6 +25,7 @@
         <activity android:name=".IntentTabActivity"/>
         <activity android:name=".CanvasPicActivity"/>
         <activity android:name=".CanvasPicActivity"/>
+        <activity android:name=".HandDrawCanvasActivity"/>
     </application>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
 </manifest>

@@ -3,7 +3,14 @@
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
+              android:scrollbars="vertical"
         >
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:id="@+id/mycanvasBtn"
+            android:text="画图板"/>
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:id="@+id/canvasBtn"
+            android:text="绘图实例"/>
     <Button android:layout_width="fill_parent" android:layout_height="wrap_content"
             android:text="进度对话框"
             android:id="@+id/progressDialogBtn"/>
@@ -37,8 +44,6 @@
     <Button android:layout_width="match_parent" android:layout_height="wrap_content"
             android:id="@+id/intentTabBtn"
             android:text="Intent加载Tab"/>
-    <Button android:layout_width="fill_parent" android:layout_height="wrap_content"
-            android:id="@+id/canvasBtn"
-            android:text="绘图实例"/>
+
 </LinearLayout>
 
