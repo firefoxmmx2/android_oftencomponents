@@ -33,6 +33,7 @@ public class MainActivity extends Activity {
     private Button handDrawButton;
     private Button warpButton;
     private Button sharedPreferenceButton;
+    private Button fileIOButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -179,6 +180,14 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this, SharedPreferencesActivity.class);
+                startActivity(intent);
+            }
+        });
+        fileIOButton=(Button)findViewById(R.id.fileIOBtn);
+        fileIOButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,FileIOActivity.class);
                 startActivity(intent);
             }
         });

@@ -28,6 +28,7 @@
         <activity android:name=".HandDrawCanvasActivity"/>
         <activity android:name=".WarpActiviy"/>
         <activity android:name=".SharedPreferencesActivity"/>
+        <activity android:name=".FileIOActivity"/>
     </application>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
 </manifest>
