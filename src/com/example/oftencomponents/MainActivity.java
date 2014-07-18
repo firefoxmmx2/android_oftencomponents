@@ -2,7 +2,9 @@ package com.example.oftencomponents;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.LinearGradient;
+import android.hardware.Camera;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -30,6 +32,7 @@ public class MainActivity extends Activity {
     private Button canvasButton;
     private Button handDrawButton;
     private Button warpButton;
+    private Button sharedPreferenceButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -167,6 +170,15 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this,WarpActiviy.class);
+                startActivity(intent);
+            }
+        });
+
+        sharedPreferenceButton=(Button)findViewById(R.id.sharedPreferenceBtn);
+        sharedPreferenceButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this, SharedPreferencesActivity.class);
                 startActivity(intent);
             }
         });
