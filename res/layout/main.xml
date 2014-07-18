@@ -1,49 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              android:scrollbars="vertical"
-        >
-    <Button android:layout_width="fill_parent" android:layout_height="wrap_content"
-            android:id="@+id/mycanvasBtn"
-            android:text="画图板"/>
-    <Button android:layout_width="fill_parent" android:layout_height="wrap_content"
-            android:id="@+id/canvasBtn"
-            android:text="绘图实例"/>
-    <Button android:layout_width="fill_parent" android:layout_height="wrap_content"
-            android:text="进度对话框"
-            android:id="@+id/progressDialogBtn"/>
-    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:text="自定义消息提示"
-            android:id="@+id/msgDialogBtn"/>
-    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:id="@+id/notificationBtn"
-            android:text="通知区域显示"/>
-    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:id="@+id/checkableMenuBtn"
-            android:text="复选框上下文菜单"/>
-    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:id="@+id/configurationActivityBtn"
-            android:text="手机信息"/>
-    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:id="@+id/handlerBtn"
-            android:text="消息传递"/>
-    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:id="@+id/activityResultBtn"
-            android:text="活动结果传递"/>
-    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:id="@+id/intentTBundleBtn"
-            android:text="Intent传递bundle"/>
-    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:id="@+id/returnHomeStartBtn"
-            android:text="返回系统home"/>
-    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:id="@+id/dataAttrStartBtn"
-            android:text="Intent DataAttr实例"/>
-    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:id="@+id/intentTabBtn"
-            android:text="Intent加载Tab"/>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            >
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/warpBtn"
+                android:text="扭曲图像"/>
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:id="@+id/mycanvasBtn"
+                android:text="画图板"/>
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:id="@+id/canvasBtn"
+                android:text="绘图实例"/>
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:text="进度对话框"
+                android:id="@+id/progressDialogBtn"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="自定义消息提示"
+                android:id="@+id/msgDialogBtn"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/notificationBtn"
+                android:text="通知区域显示"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/checkableMenuBtn"
+                android:text="复选框上下文菜单"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/configurationActivityBtn"
+                android:text="手机信息"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/handlerBtn"
+                android:text="消息传递"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/activityResultBtn"
+                android:text="活动结果传递"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/intentTBundleBtn"
+                android:text="Intent传递bundle"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/returnHomeStartBtn"
+                android:text="返回系统home"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/dataAttrStartBtn"
+                android:text="Intent DataAttr实例"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/intentTabBtn"
+                android:text="Intent加载Tab"/>
 
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
 

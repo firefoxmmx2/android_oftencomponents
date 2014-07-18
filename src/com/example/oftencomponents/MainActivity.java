@@ -29,6 +29,7 @@ public class MainActivity extends Activity {
     private Button intentTabButton;
     private Button canvasButton;
     private Button handDrawButton;
+    private Button warpButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -157,6 +158,15 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this,HandDrawCanvasActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        warpButton=(Button)findViewById(R.id.warpBtn);
+        warpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,WarpActiviy.class);
                 startActivity(intent);
             }
         });

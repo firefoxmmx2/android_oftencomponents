@@ -26,6 +26,7 @@
         <activity android:name=".CanvasPicActivity"/>
         <activity android:name=".CanvasPicActivity"/>
         <activity android:name=".HandDrawCanvasActivity"/>
+        <activity android:name=".WarpActiviy"/>
     </application>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
 </manifest>
