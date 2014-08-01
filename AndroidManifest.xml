@@ -24,11 +24,12 @@
         <activity android:name=".DataAttrActivity"/>
         <activity android:name=".IntentTabActivity"/>
         <activity android:name=".CanvasPicActivity"/>
-        <activity android:name=".CanvasPicActivity"/>
         <activity android:name=".HandDrawCanvasActivity"/>
         <activity android:name=".WarpActiviy"/>
         <activity android:name=".SharedPreferencesActivity"/>
         <activity android:name=".FileIOActivity"/>
+        <activity android:name=".SqliteActivity"/>
+        <activity android:name=".SqliteResultActivity"/>
     </application>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
 </manifest>

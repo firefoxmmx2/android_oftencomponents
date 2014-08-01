@@ -34,6 +34,7 @@ public class MainActivity extends Activity {
     private Button warpButton;
     private Button sharedPreferenceButton;
     private Button fileIOButton;
+    private Button sqliteButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -188,6 +189,14 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this,FileIOActivity.class);
+                startActivity(intent);
+            }
+        });
+        sqliteButton=(Button)findViewById(R.id.sqliteBtn);
+        sqliteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,SqliteActivity.class);
                 startActivity(intent);
             }
         });
