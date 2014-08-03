@@ -36,7 +36,7 @@ public class SqliteActivity extends Activity {
             public void onClick(View v) {
                 String word = ((EditText) findViewById(R.id.sqliteEd1)).getText().toString();
                 String detial = ((EditText) findViewById(R.id.sqliteEd2)).getText().toString();
-                insertData(helper.getReadableDatabase(), word, detial);
+                insertData(helper.getWritableDatabase(), word, detial);
                 Toast.makeText(SqliteActivity.this, "添加生词成功!", 8000).show();
             }
         });
@@ -46,7 +46,7 @@ public class SqliteActivity extends Activity {
             public void onClick(View v) {
                 String key = ((EditText) findViewById(R.id.sqliteEd3)).getText().toString();
                 Cursor cursor = helper.getReadableDatabase().rawQuery("" +
-                                "select * from dict where word like ? or detial like ?",
+                                "select * from dict where word like ? or detail like ?",
                         new String[]{"%" + key + "%", "%" + key + "%"});
                 Bundle data = new Bundle();
                 data.putSerializable("data", converCursorToList(cursor));

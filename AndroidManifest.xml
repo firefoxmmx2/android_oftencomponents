@@ -30,6 +30,9 @@
         <activity android:name=".FileIOActivity"/>
         <activity android:name=".SqliteActivity"/>
         <activity android:name=".SqliteResultActivity"/>
+        <activity android:name=".GestureActivity"/>
+        <activity android:name=".GestureZoomActivity"/>
+        <activity android:name=".GesturePageActivity"/>
     </application>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
 </manifest>
