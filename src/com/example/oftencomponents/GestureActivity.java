@@ -48,35 +48,35 @@ public class GestureActivity extends Activity implements GestureDetector.OnGestu
 
     @Override
     public boolean onDown(MotionEvent e) {
-        Toast.makeText(this,"onDown",8000).show();
+        Toast.makeText(this,"onDown", Toast.LENGTH_SHORT).show();
         return false;
     }
 
     @Override
     public void onShowPress(MotionEvent e) {
-        Toast.makeText(this,"onShowPress",8000).show();
+        Toast.makeText(this,"onShowPress",Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public boolean onSingleTapUp(MotionEvent e) {
-        Toast.makeText(this,"onSingleTapUp",8000).show();
+        Toast.makeText(this,"onSingleTapUp",Toast.LENGTH_SHORT).show();
         return false;
     }
 
     @Override
     public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
-        Toast.makeText(this,"onScroll",8000).show();
+        Toast.makeText(this,"onScroll",Toast.LENGTH_SHORT).show();
         return false;
     }
 
     @Override
     public void onLongPress(MotionEvent e) {
-        Toast.makeText(this,"onLongPress",8000).show();
+        Toast.makeText(this,"onLongPress",Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-        Toast.makeText(this,"onFling",8000).show();
+        Toast.makeText(this,"onFling",Toast.LENGTH_SHORT).show();
         return false;
     }
 }

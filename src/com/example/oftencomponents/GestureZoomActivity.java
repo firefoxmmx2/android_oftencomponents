@@ -31,11 +31,11 @@ public class GestureZoomActivity extends Activity implements GestureDetector.OnG
         imageView=(ImageView)findViewById(R.id.gestureShow);
         matrix=new Matrix();
 //        获取被缩放的图片
-        bitmap= BitmapFactory.decodeResource(this.getResources(), android.R.drawable.flower);
+        bitmap= BitmapFactory.decodeResource(this.getResources(), R.drawable.elsa);
 //        获得位图高宽
         width= bitmap.getWidth();
         height= bitmap.getHeight();
-        imageView.setImageBitmap(BitmapFactory.decodeResource(this.getResources(), R.drawable.flower));
+        imageView.setImageBitmap(BitmapFactory.decodeResource(this.getResources(), R.drawable.elsa));
     }
 
     @Override

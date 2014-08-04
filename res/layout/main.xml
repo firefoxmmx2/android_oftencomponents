@@ -8,6 +8,9 @@
             android:layout_height="match_parent"
             >
         <Button android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:id="@+id/gestureBtn"
+                android:text="使用手势"/>
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content"
                 android:id="@+id/sqliteBtn"
                 android:text="使用sqlite"/>
         <Button android:layout_width="fill_parent" android:layout_height="wrap_content"

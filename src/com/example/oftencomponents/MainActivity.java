@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
     private Button sharedPreferenceButton;
     private Button fileIOButton;
     private Button sqliteButton;
-
+    private Button gestureButton;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -197,6 +197,14 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,SqliteActivity.class);
+                startActivity(intent);
+            }
+        });
+        gestureButton=(Button)findViewById(R.id.gestureBtn);
+        gestureButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,GestureActivity.class);
                 startActivity(intent);
             }
         });
